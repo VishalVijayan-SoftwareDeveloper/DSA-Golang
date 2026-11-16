@@ -1,6 +1,9 @@
 package main
 
-import "Go-Practice-Problems/problems"
+import (
+	"Go-Practice-Problems/problems"
+	"fmt"
+)
 
 func main() {
 
@@ -60,7 +63,23 @@ func main() {
 		//{"device2", 200},
 		//{"device1", 150},
 	}
-	problems.ProcessData(data)*/
+	problems.ProcessData(data)
 	inputa := []int{2, 3, 4}
-	problems.WorkerSquareReadings(inputa, 2)
+	problems.WorkerSquareReadings(inputa, 2)#
+
+	*/
+	test_inputs := []string{
+		"",
+		"0",
+		"+a+",
+		"+1+",
+		"+a+b+",
+		"+Z+Y+",
+		"+a+b+7",
+		"+a+=5=+d+",
+	}
+	for _, str := range test_inputs {
+		fmt.Println(problems.IsValidString(str))
+	}
+
 }
