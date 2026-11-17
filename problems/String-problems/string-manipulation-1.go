@@ -1,4 +1,4 @@
-package problems
+package String_problems
 
 import "unicode"
 

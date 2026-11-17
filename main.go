@@ -1,7 +1,7 @@
 package main
 
 import (
-	"Go-Practice-Problems/problems"
+	String_problems "Go-Practice-Problems/problems/String-problems"
 	"fmt"
 )
 
@@ -67,7 +67,7 @@ func main() {
 	inputa := []int{2, 3, 4}
 	problems.WorkerSquareReadings(inputa, 2)#
 
-	*/
+
 	test_inputs := []string{
 		"",
 		"0",
@@ -79,7 +79,19 @@ func main() {
 		"+a+=5=+d+",
 	}
 	for _, str := range test_inputs {
-		fmt.Println(problems.IsValidString(str))
+		fmt.Println(String_problems.IsValidString(str))
 	}
 
+
+	testInput := "swiss"
+	fmt.Println(String_problems.FirstRepeatingCharacter(testInput))
+
+	nums := []int{2, 7, 11, 15}
+	target := 9
+	fmt.Println(map_problems.TwoSum(nums, target))
+
+	*/
+
+	input := "([{}])"
+	fmt.Println(String_problems.IsValidParenthesis(input))
 }
