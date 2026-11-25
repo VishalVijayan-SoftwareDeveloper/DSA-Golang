@@ -90,8 +90,12 @@ func main() {
 	target := 9
 	fmt.Println(map_problems.TwoSum(nums, target))
 
-	*/
+
 
 	input := "([{}])"
 	fmt.Println(String_problems.IsValidParenthesis(input))
+
+	*/
+	input := "abcd"
+	fmt.Println(String_problems.ReverseString(input))
 }
